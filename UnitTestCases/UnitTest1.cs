@@ -7,28 +7,28 @@ namespace UnitTestCases.Init
     public class UnitTest1
     {
 
-        protected static Init NotepadPlusPlus;
-        private readonly Artikel Artikel = new Artikel(NotepadPlusPlus.Driver);
+        protected static Init UITest;
+        //private readonly Artikel Artikel = new Artikel(NotepadPlusPlus.Driver);
         //private readonly Keyboard Keyboard = new Keyboard();
         //private readonly Delay Delay = new Delay();
 
         [ClassInitialize]
         public static void CUPInitStart(TestContext _)
         {
-            NotepadPlusPlus = new Init();
-            Delay Delay = new Delay();
+            UITest = new Init();
+            //Delay Delay = new Delay();
             //Thread ThreadDelay = new Thread(() => Delay.InSeconds(5));
 
-            NotepadPlusPlus.StartNotepadPlusPlus();
+            UITest.StartNotepadPlusPlus();
             //NotepadPlusPlus.BringCUPtoFront();
 
             //ThreadDelay.Start();
-            Delay.InSeconds(5);
+            //Delay.InSeconds(5);
             //NotepadPlusPlus.BringCUPtoFront();
             //CUP.Password.SendKeys(CUP.CUPPassword);
 
-            NotepadPlusPlus.Login.Click();
-            Delay.InSeconds(3);
+           // UITest.Login.Click();
+            //Delay.InSeconds(3);
 
             //NotepadPlusPlus.BringCUPtoFront();
         }
@@ -36,10 +36,9 @@ namespace UnitTestCases.Init
 
 
         [TestMethod]
-        public void TestMethod1()
+        public void TypingTestMethod()
         {
-
-
+            UITest.Driver.FindElementByClassName("Scintilla").SendKeys("Das ist ein Text!");
         }
     }
 }

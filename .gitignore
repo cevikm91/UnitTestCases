@@ -11,3 +11,4 @@ UnitTestCases/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
 UnitTestCases/obj/Debug/UnitTestCases.csproj.AssemblyReference.cache
 UnitTestCases/obj/Release/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs
 .vs/slnx.sqlite
+*.sqlite
