@@ -69,7 +69,7 @@ namespace UnitTestCases.Init
 
         public void CloseWiniumDriver()
         {
-            foreach (var WAPProcess in Process.GetProcessesByName("WinAppDriver")) //conhost
+            foreach (var WAPProcess in Process.GetProcessesByName("WinAppDriver"))
             {
                 WAPProcess.Kill();
             }
