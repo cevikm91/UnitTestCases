@@ -38,15 +38,6 @@ namespace UnitTestCases.Init
 
         }
 
-        private IWebElement _password;
-        public IWebElement Password
-        {
-            get
-            {
-                _password = Driver.FindElementByName("PasswordTextEdit");
-                 return _password;
-            }
-        }
         private IWebElement _login;
         public IWebElement Login
         {
