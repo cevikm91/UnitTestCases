@@ -60,5 +60,23 @@ namespace UnitTestCases.Init
             }
         }*/
 
+
+        public void CloseNotepadPlusPlus()
+        {
+            Delay.InSeconds(2);
+            foreach (var nppProcess in Process.GetProcessesByName("notepad++"))
+            {
+                nppProcess.Kill();
+            }
+        }
+
+        public void CloseWiniumDriver()
+        {
+            foreach (var WAPProcess in Process.GetProcessesByName("WinAppDriver")) //conhost
+            {
+                WAPProcess.Kill();
+            }
+        }
+
     }
 }
