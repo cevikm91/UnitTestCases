@@ -40,5 +40,15 @@ namespace UnitTestCases.Init
             UITest.Driver.FindElementByClassName("Scintilla").SendKeys("Ciao!");
             Delay.InSeconds(2);
         }
+
+         [ClassCleanup()]
+        public static void CloseUiTest()
+        {
+            UITest.CloseNotepadPlusPlus();
+            UITest.CloseWADriver();
+            UITest = null;
+        }
+
+
     }
 }

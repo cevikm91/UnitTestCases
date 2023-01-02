@@ -3,7 +3,6 @@ using OpenQA.Selenium.Remote;
 using System;
 using System.Diagnostics;
 
-
 namespace UnitTestCases.Init
 {
     public class Init
@@ -63,7 +62,7 @@ namespace UnitTestCases.Init
             }
         }
 
-        public void CloseWiniumDriver()
+        public void CloseWADriver()
         {
             foreach (var WAPProcess in Process.GetProcessesByName("WinAppDriver"))
             {
