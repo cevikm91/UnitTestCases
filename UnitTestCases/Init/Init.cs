@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace UnitTestCases.Init
 {
-    class Init
+    public class Init
     {
         private Process Process { get; set; } = new Process();
         private string StartWADriver { get; } = $@"C:\Program Files (x86)\Windows Application Driver\WinAppDriver.exe";
