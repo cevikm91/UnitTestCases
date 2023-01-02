@@ -45,7 +45,7 @@ namespace UnitTestCases.Init
             StartDriver();
 
             AppiumOptions StartNotepadPlusPlus = new AppiumOptions();
-            startStream.AddAdditionalCapability("app", NotepadPlusPlusPath);
+            StartNotepadPlusPlus.AddAdditionalCapability("app", NotepadPlusPlusPath);
             Driver = new RemoteWebDriver(new Uri("http://http://127.0.0.1:4723"), StartNotepadPlusPlus);
 
         }
