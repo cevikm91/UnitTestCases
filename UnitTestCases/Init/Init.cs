@@ -8,7 +8,7 @@ namespace UnitTestCases.Init
 {
     public class Init
     {
-        private WindowsDriver<WindowsElement> _driver;
+        //private WindowsDriver<WindowsElement> _driver;
         private Process Process { get; set; } = new Process();
         private string StartWADriver { get; } = $@"C:\Program Files (x86)\Windows Application Driver\WinAppDriver.exe";
         //private string SteamPath { get; set; } = $@"C:\Program Files (x86)\Steam\Steam.exe";
@@ -32,7 +32,7 @@ namespace UnitTestCases.Init
 
             AppiumOptions startSteam = new AppiumOptions();
             startStream.AddAdditionalCapability("app", SteamPath);
-            Driver = new RemoteWebDriver(new Uri("http://http://127.0.0.1:4723"), startSteam);
+            Driver = new RemoteWebDriver(new Uri("http://127.0.0.1:4723"), startSteam);
 
         }*/
         
@@ -42,7 +42,7 @@ namespace UnitTestCases.Init
 
             AppiumOptions StartNotepadPlusPlus = new AppiumOptions();
             StartNotepadPlusPlus.AddAdditionalCapability("app", NotepadPlusPlusPath);
-            _driver = new WindowsDriver<WindowsElement>(new Uri("http://http://127.0.0.1:4723"), StartNotepadPlusPlus);
+            Driver = new RemoteWebDriver(new Uri("http://127.0.0.1:4723"), StartNotepadPlusPlus);
         }
 
         /*private IWebElement _login;

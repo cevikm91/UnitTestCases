@@ -35,7 +35,7 @@ namespace UnitTestCases.Init
         [TestMethod]
         public void TypingTestMethod()
         {
-            UITest.Driver.FindElementByClassName("Scintilla").SendKeys("Das ist ein Text!");
+            UITest.Driver.FindElementByClassName("Scintilla").SendKeys("Das ist ein Text!\n");
             Delay.InSeconds(5);
             UITest.Driver.FindElementByClassName("Scintilla").SendKeys("Ciao!");
             Delay.InSeconds(2);
