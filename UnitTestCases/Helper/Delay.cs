@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Threading;
 
-
-namespace UnitTestCases.Helper
+namespace UnitTestCases.Init
 {
     public class Delay
     {

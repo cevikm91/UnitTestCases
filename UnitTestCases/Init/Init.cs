@@ -14,12 +14,11 @@ namespace UnitTestCases.Init
     {
         private Process Process { get; set; } = new Process();
         private string StartWADriver { get; } = $@"C:\Program Files (x86)\Windows Application Driver\WinAppDriver.exe";
-
         //private string SteamPath { get; set; } = $@"C:\Program Files (x86)\Steam\Steam.exe";
         private string NotepadPlusPlusPath { get; set; } = $@"C:\Program Files\Notepad++\notepad++.exe";
-
         public RemoteWebDriver Driver { get; set; }
 
+        private readonly Delay Delay = new Delay();
 
         public void StartDriver ()
         {
@@ -41,13 +40,11 @@ namespace UnitTestCases.Init
         
         public void StartNotepadPlusPlus()
         {
-
             StartDriver();
 
             AppiumOptions StartNotepadPlusPlus = new AppiumOptions();
             StartNotepadPlusPlus.AddAdditionalCapability("app", NotepadPlusPlusPath);
             Driver = new RemoteWebDriver(new Uri("http://http://127.0.0.1:4723"), StartNotepadPlusPlus);
-
         }
 
         /*private IWebElement _login;

@@ -10,7 +10,7 @@ namespace UnitTestCases.Init
         protected static Init UITest;
         //private readonly Artikel Artikel = new Artikel(NotepadPlusPlus.Driver);
         //private readonly Keyboard Keyboard = new Keyboard();
-        //private readonly Delay Delay = new Delay();
+        private readonly Delay Delay = new Delay();
 
         [ClassInitialize]
         public static void CUPInitStart(TestContext _)
@@ -23,7 +23,7 @@ namespace UnitTestCases.Init
             //NotepadPlusPlus.BringCUPtoFront();
 
             //ThreadDelay.Start();
-            //Delay.InSeconds(5);
+            Delay.InSeconds(5);
             //NotepadPlusPlus.BringCUPtoFront();
             //CUP.Password.SendKeys(CUP.CUPPassword);
 
