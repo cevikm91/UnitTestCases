@@ -1,5 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
 
 namespace UnitTestCases.Init
 {
@@ -16,7 +15,7 @@ namespace UnitTestCases.Init
         public static void CUPInitStart(TestContext _)
         {
             UITest = new Init();
-            //Delay Delay = new Delay();
+            Delay Delay = new Delay();
             //Thread ThreadDelay = new Thread(() => Delay.InSeconds(5));
 
             UITest.StartNotepadPlusPlus();
@@ -33,12 +32,13 @@ namespace UnitTestCases.Init
             //NotepadPlusPlus.BringCUPtoFront();
         }
 
-
-
         [TestMethod]
         public void TypingTestMethod()
         {
             UITest.Driver.FindElementByClassName("Scintilla").SendKeys("Das ist ein Text!");
+            Delay.InSeconds(5);
+            UITest.Driver.FindElementByClassName("Scintilla").SendKeys("Ciao!");
+            Delay.InSeconds(2);
         }
     }
 }
