@@ -15,7 +15,8 @@ namespace UnitTestCases.Init
         private Process Process { get; set; } = new Process();
         private string StartWADriver { get; } = $@"C:\Program Files (x86)\Windows Application Driver\WinAppDriver.exe";
 
-        private string SteamPath { get; set; } = $@"C:\Program Files (x86)\Steam\Steam.exe";
+        //private string SteamPath { get; set; } = $@"C:\Program Files (x86)\Steam\Steam.exe";
+        private string NotepadPlusPlusPath { get; set; } = $@"C:\Program Files\Notepad++\notepad++.exe";
 
         public RemoteWebDriver Driver { get; set; }
 
@@ -27,18 +28,29 @@ namespace UnitTestCases.Init
             Process.Start();
         }
 
-        public void StartSteam()
+       /* public void StartSteam()
         {
 
             StartDriver();
 
-            AppiumOptions startStream = new AppiumOptions();
+            AppiumOptions startSteam = new AppiumOptions();
             startStream.AddAdditionalCapability("app", SteamPath);
-            Driver = new RemoteWebDriver(new Uri("http://http://127.0.0.1:4723"), startStream);
+            Driver = new RemoteWebDriver(new Uri("http://http://127.0.0.1:4723"), startSteam);
+
+        }*/
+        
+        public void StartNotepadPlusPlus()
+        {
+
+            StartDriver();
+
+            AppiumOptions StartNotepadPlusPlus = new AppiumOptions();
+            startStream.AddAdditionalCapability("app", NotepadPlusPlusPath);
+            Driver = new RemoteWebDriver(new Uri("http://http://127.0.0.1:4723"), StartNotepadPlusPlus);
 
         }
 
-        private IWebElement _login;
+        /*private IWebElement _login;
         public IWebElement Login
         {
             get
@@ -46,7 +58,7 @@ namespace UnitTestCases.Init
                 _login = Driver.FindElementByName("Login");
                 return _login;
             }
-        }
+        }*/
 
     }
 }
