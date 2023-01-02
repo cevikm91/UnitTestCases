@@ -1,4 +1,5 @@
 ﻿using OpenQA.Selenium.Appium;
+using OpenQA.Selenium.Appium.Windows;
 using OpenQA.Selenium.Remote;
 using System;
 using System.Diagnostics;
@@ -7,6 +8,7 @@ namespace UnitTestCases.Init
 {
     public class Init
     {
+        private WindowsDriver<WindowsElement> _driver;
         private Process Process { get; set; } = new Process();
         private string StartWADriver { get; } = $@"C:\Program Files (x86)\Windows Application Driver\WinAppDriver.exe";
         //private string SteamPath { get; set; } = $@"C:\Program Files (x86)\Steam\Steam.exe";
@@ -14,6 +16,7 @@ namespace UnitTestCases.Init
         public RemoteWebDriver Driver { get; set; }
 
         private readonly Delay Delay = new Delay();
+        
 
         public void StartDriver ()
         {
@@ -39,7 +42,7 @@ namespace UnitTestCases.Init
 
             AppiumOptions StartNotepadPlusPlus = new AppiumOptions();
             StartNotepadPlusPlus.AddAdditionalCapability("app", NotepadPlusPlusPath);
-            Driver = new RemoteWebDriver(new Uri("http://http://127.0.0.1:4723"), StartNotepadPlusPlus);
+            _driver = new WindowsDriver<WindowsElement>(new Uri("http://http://127.0.0.1:4723"), StartNotepadPlusPlus);
         }
 
         /*private IWebElement _login;

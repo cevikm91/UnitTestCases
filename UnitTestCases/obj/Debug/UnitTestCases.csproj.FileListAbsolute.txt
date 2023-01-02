@@ -45,9 +45,7 @@ C:\Users\LenovoM\Source\Repos\cevikm91\UnitTestCases\UnitTestCases\bin\Debug\de\
 C:\Users\LenovoM\Source\Repos\cevikm91\UnitTestCases\UnitTestCases\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
 C:\Users\LenovoM\Source\Repos\cevikm91\UnitTestCases\UnitTestCases\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
 C:\Users\LenovoM\Source\Repos\cevikm91\UnitTestCases\UnitTestCases\bin\Debug\Microsoft.TestPlatform.AdapterUtilities.dll
-C:\Users\LenovoM\Source\Repos\cevikm91\UnitTestCases\UnitTestCases\bin\Debug\selenium-manager\linux\selenium-manager
-C:\Users\LenovoM\Source\Repos\cevikm91\UnitTestCases\UnitTestCases\bin\Debug\selenium-manager\macos\selenium-manager
-C:\Users\LenovoM\Source\Repos\cevikm91\UnitTestCases\UnitTestCases\bin\Debug\selenium-manager\windows\selenium-manager.exe
+C:\Users\LenovoM\Source\Repos\cevikm91\UnitTestCases\UnitTestCases\bin\Debug\UnitTestCases.dll.config
 C:\Users\LenovoM\Source\Repos\cevikm91\UnitTestCases\UnitTestCases\bin\Debug\UnitTestCases.dll
 C:\Users\LenovoM\Source\Repos\cevikm91\UnitTestCases\UnitTestCases\bin\Debug\UnitTestCases.pdb
 C:\Users\LenovoM\Source\Repos\cevikm91\UnitTestCases\UnitTestCases\bin\Debug\Appium.Net.dll
@@ -63,6 +61,8 @@ C:\Users\LenovoM\Source\Repos\cevikm91\UnitTestCases\UnitTestCases\bin\Debug\Cas
 C:\Users\LenovoM\Source\Repos\cevikm91\UnitTestCases\UnitTestCases\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
 C:\Users\LenovoM\Source\Repos\cevikm91\UnitTestCases\UnitTestCases\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
 C:\Users\LenovoM\Source\Repos\cevikm91\UnitTestCases\UnitTestCases\bin\Debug\Newtonsoft.Json.xml
+C:\Users\LenovoM\Source\Repos\cevikm91\UnitTestCases\UnitTestCases\bin\Debug\WebDriver.xml
+C:\Users\LenovoM\Source\Repos\cevikm91\UnitTestCases\UnitTestCases\bin\Debug\WebDriver.Support.xml
 C:\Users\LenovoM\Source\Repos\cevikm91\UnitTestCases\UnitTestCases\bin\Debug\cs\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
 C:\Users\LenovoM\Source\Repos\cevikm91\UnitTestCases\UnitTestCases\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
 C:\Users\LenovoM\Source\Repos\cevikm91\UnitTestCases\UnitTestCases\bin\Debug\fr\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
