@@ -25,10 +25,10 @@ namespace UnitTestCases.Init
         {           
             Delay.InSeconds(1);
             SendKeys.SendWait("^{n}");
-            UITest.Driver.FindElementByClassName("Scintilla").SendKeys("Unser erster UITest für Notepad++!!!\n");
+            UITest.Driver.FindElementByClassName("Scintilla").SendKeys("Unser erster UITest für Notepad++ !!!\n");
             Delay.InSeconds(1);
             SendKeys.SendWait("^{s}");
-            Delay.InSeconds(1);
+            Delay.InSeconds(2);
             SendKeys.SendWait("UITextDatei.txt");
             Delay.InSeconds(1);
             UITest.Driver.FindElementByName("Speichern").Click();
