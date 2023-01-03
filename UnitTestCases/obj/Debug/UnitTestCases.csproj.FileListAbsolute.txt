@@ -79,3 +79,4 @@ C:\Users\LenovoM\Source\Repos\cevikm91\UnitTestCases\UnitTestCases\obj\Debug\Uni
 C:\Users\LenovoM\Source\Repos\cevikm91\UnitTestCases\UnitTestCases\obj\Debug\UnitTestCases.csproj.CopyComplete
 C:\Users\LenovoM\Source\Repos\cevikm91\UnitTestCases\UnitTestCases\obj\Debug\UnitTestCases.dll
 C:\Users\LenovoM\Source\Repos\cevikm91\UnitTestCases\UnitTestCases\obj\Debug\UnitTestCases.pdb
+C:\Users\M\source\repos\UnitTestCases\UnitTestCases\obj\Debug\UnitTestCases.csproj.AssemblyReference.cache

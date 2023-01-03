@@ -16,20 +16,11 @@ namespace UnitTestCases.Init
         {
             UITest = new Init();
             Delay Delay = new Delay();
-            //Thread ThreadDelay = new Thread(() => Delay.InSeconds(5));
 
-            UITest.StartNotepadPlusPlus();
-            //NotepadPlusPlus.BringCUPtoFront();
+            UITest.StartNpp();
 
-            //ThreadDelay.Start();
             Delay.InSeconds(5);
-            //NotepadPlusPlus.BringCUPtoFront();
-            //CUP.Password.SendKeys(CUP.CUPPassword);
 
-           // UITest.Login.Click();
-            //Delay.InSeconds(3);
-
-            //NotepadPlusPlus.BringCUPtoFront();
         }
 
         [TestMethod]
@@ -44,7 +35,7 @@ namespace UnitTestCases.Init
          [ClassCleanup()]
         public static void CloseUiTest()
         {
-            UITest.CloseNotepadPlusPlus();
+            UITest.CloseNpp();
             UITest.CloseWADriver();
             UITest = null;
         }
