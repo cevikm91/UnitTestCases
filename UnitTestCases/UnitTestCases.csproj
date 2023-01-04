@@ -72,7 +72,7 @@
   <ItemGroup>
     <Compile Include="Helper\Delay.cs" />
     <Compile Include="Init\Init.cs" />
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="UITests\UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

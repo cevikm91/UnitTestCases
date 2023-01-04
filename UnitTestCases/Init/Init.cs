@@ -15,7 +15,6 @@ namespace UnitTestCases.Init
         //private string NppPath { get; set; } = ConfigurationManager.AppSettings.Get("AppPathLaptop");
         public RemoteWebDriver Driver { get; set; }
         
-        
         public void StartDriver ()
         {
             Process.StartInfo.FileName = StartWADriver;
