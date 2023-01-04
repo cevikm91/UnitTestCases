@@ -80,9 +80,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Helper\AppPath1.txt" />
-    <Content Include="Helper\AppPath2.txt" />
-    <Content Include="Helper\DriverPath.txt" />
+    <Content Include="Helper\Old\AppPath1.txt" />
+    <Content Include="Helper\Old\AppPath2.txt" />
+    <Content Include="Helper\Old\DriverPath.txt" />
+    <Content Include="Helper\Old\OldMethods.txt" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
