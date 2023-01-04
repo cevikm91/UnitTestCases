@@ -1,5 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using OpenQA.Selenium;
 using System.Windows.Forms;
 
 namespace UnitTestCases.Init
